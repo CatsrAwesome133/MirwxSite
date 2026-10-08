@@ -10,12 +10,17 @@
     --darkest: #0d0f20;
 }
 
+
+/* Classes for divs to spans */
+
+/* A font */
 .scratchy {
   font-family: "Homemade Apple", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
+/* for code blocks */
 .code-block {
     background-color: var(--darkest);
     font-family: "Kode Mono", courier new, monospace;
@@ -29,6 +34,7 @@
     text-align: left;
 }
 
+/* for code block-like menus (table of contents so far) */
 .fake-block {
     background-color: var(--darkest);
     font-family: "Kode Mono", courier new, monospace;
@@ -45,6 +51,8 @@
     padding-right: 10px;
 }
 
+/* small text & variations for diff situations */
+/* default "small" class is not used currently */
 .small {
     font-size: 60%;
     opacity: 0.5;
@@ -64,6 +72,23 @@ h1.small {
     opacity: 0.5;
     padding-left: 5px;
 }
+
+/* subtitles since default small is cursed */
+.subtitle {
+    font-size: 10pt;
+    color: var(--midtone);
+    text-shadow: 0px 0px 5px var(--small);
+    margin-bottom: 5px;
+}
+
+.subtitle:hover {
+    font-size: 10pt;
+    color: var(--normal);
+    text-shadow: 0px 0px 5px var(--midtone);
+}
+
+
+/* General Formatting*/
 
 body {
     background-color: var(--bg);
@@ -93,6 +118,9 @@ h2 {
     margin-right: 5%;
 }
 
+
+/* Images */
+/* intended for the portfolio */
 .image-section {
     border: double 2px var(--small);
     border-left: solid var(--small);
@@ -111,18 +139,40 @@ h2 {
     padding-bottom: 10px;
 }
 
-.subtitle {
-    font-size: 10pt;
-    color: var(--midtone);
-    text-shadow: 0px 0px 5px var(--small);
-    margin-bottom: 5px;
+/* icons. currently there is only one */
+.img-icon {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
 }
 
-.subtitle:hover {
-    font-size: 10pt;
-    color: var(--normal);
-    text-shadow: 0px 0px 5px var(--midtone);
+/* "gallery" images */
+/* also used within "image-section" classes */
+.img-gallery {
+    max-width: 400px;
+    border: double;
+    border-left: solid;
+    border-color: var(--normal);
+    corner-shape: bevel;
+    border-radius: 5px;
 }
+
+/* banner images. these mainly just resize. copied from Artfight */
+.banner {
+    margin: auto;
+    max-width: 70%;
+    max-height: 100vh;
+    filter: brightness(0) saturate(100%) invert(92%) sepia(7%) saturate(656%) hue-rotate(171deg) brightness(99%) contrast(89%);
+}
+
+/* literally just a filter to blueify things */
+/* matches to var(--normal) */
+.make-blue {
+    filter: brightness(0) saturate(100%) invert(92%) sepia(7%) saturate(656%) hue-rotate(171deg) brightness(99%) contrast(89%);
+}
+
+
+/* Links */
 
 a {
     color: var(--lightest);
@@ -136,32 +186,9 @@ a:hover {
     text-decoration: none;
 }
 
-.img-icon {
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-}
 
-.img-gallery {
-    max-width: 400px;
-    border: double;
-    border-left: solid;
-    border-color: var(--normal);
-    corner-shape: bevel;
-    border-radius: 5px;
-}
-
-.banner {
-    margin: auto;
-    max-width: 70%;
-    max-height: 100vh;
-    filter: brightness(0) saturate(100%) invert(92%) sepia(7%) saturate(656%) hue-rotate(171deg) brightness(99%) contrast(89%);
-}
-
-.make-blue {
-    filter: brightness(0) saturate(100%) invert(92%) sepia(7%) saturate(656%) hue-rotate(171deg) brightness(99%) contrast(89%);
-}
-
+/* ID-specific Formatting */
+/* special styling for the 404 title */
 #notfound {
     margin: auto;
     text-align: center;
@@ -169,6 +196,20 @@ a:hover {
     border-bottom:solid 1px var(--midtone);
     max-width: 150px;
 }
+
+/* special styling for pfp icons. "copies" carrd. */
+#pfp {
+    border-radius: 50%;
+    height: 100px;
+    transform: scale(1.5); 
+    margin: 10px;
+    margin-top: 20px;
+    border: inset 1px;
+    border-color: var(--normal);
+}
+
+
+/* Resize Stuff */
 
 @media only screen and (max-width: 600px) {
     .banner {
