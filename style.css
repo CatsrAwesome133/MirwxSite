@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Copse&family=Homemade+Apple&family=Indie+Flower&family=Kode+Mono:wght@400..700&family=LXGW+WenKai+Mono+TC:wght@300;400;700&family=Scope+One&display=swap');
+
+:root {
+    --bg: #24262e;
+    --soft-white: #eef7fa;
+    --lightest: #cfe3ee;
+    --midtone: #829eba;
+    --normal: #9fb8ce;
+    --small: #6886a8;
+    --darkest: #0d0f20;
+}
+
+.scratchy {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.code-block {
+    background-color: var(--darkest);
+    font-family: "Kode Mono", courier new, monospace;
+    font-size: 85%;
+    padding: 10px;
+    corner-shape: bevel;
+    overflow: hidden;
+    border: 3px double var(--small);
+    border-left: 3px solid var(--small);
+    border-radius: 7px;
+    text-align: left;
+}
+
+.small {
+    font-size: 60%;
+    opacity: 0.5;
+    padding-left: 5px;
+}
+
+h1.small {
+    font-size: 10pt;
+    opacity: 0.5;
+    padding-left: 5px;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--lightest);
+    text-shadow: 0px 0px 7px var(--small);
+    font-family: "Scope One", courier new, serif;
+    text-align: center;
+}
+
+p {
+    color: var(--normal);
+    text-shadow: 0px 0px 3px var(--small);
+    font-family: "Scope One", courier new, monospace;
+}
+
+h1 {
+    font-family: "Copse", courier new, monospace;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+a {
+    color: var(--lightest);
+    text-shadow: 0px 0px 5px var(--midtone);
+    text-decoration: underline var(--lightest) 1px;
+}
+
+a:hover {
+    color: var(--lightest);
+    text-shadow: 0px 0px 5px var(--lightest);
+    text-decoration: none;
+}
+
+.img-icon {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+.banner {
+    align: center;
+    max-width: 70%;
+    max-height: 100vh;
+    filter: brightness(0) saturate(100%) invert(92%) sepia(7%) saturate(656%) hue-rotate(171deg) brightness(99%) contrast(89%);
+}
+
+@media only screen and (max-width: 600px) {
+    .banner {
+        max-width: 100%;
+        max-height: 100vh;
+    }
+}
