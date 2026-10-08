@@ -1,0 +1,8 @@
+# Ignore Git configuration files
+.git/
+.github/
+
+# Ignore OS-specific hidden system files
+.DS_Store
+desktop.ini
+Thumbs.db
