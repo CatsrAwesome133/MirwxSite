@@ -126,7 +126,7 @@ h2 {
     border-left: solid var(--small);
     border-radius: 7px;
     corner-shape: bevel;
-    width: fit-content;
+    max-width: 460px;
     margin: auto;
     background-color: rgb(from var(--small) r g b / 10%);
 }
@@ -155,6 +155,35 @@ h2 {
     border-color: var(--normal);
     corner-shape: bevel;
     border-radius: 5px;
+}
+
+.img-scroll {
+    border-top: solid 1px var(--small);
+    border-bottom: solid 1px var(--small);
+    margin-top: 20px;
+    max-width: 460px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+#first-series {
+    margin-top: -10px;
+}
+
+.img-scroll > div {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 30px;
+    padding-bottom: 0px;
+}
+
+.img-scroll > div > img {
+    width: 100%;
+}
+
+.img-scroll::-webkit-scrollbar{
+    display: none;
 }
 
 /* banner images. these mainly just resize. copied from Artfight */
