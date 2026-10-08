@@ -23,8 +23,8 @@
     padding: 10px;
     corner-shape: bevel;
     overflow: hidden;
-    border: 3px double var(--small);
-    border-left: 3px solid var(--small);
+    border: 3px inset var(--small);
+    outline: 3px solid var(--darkest);
     border-radius: 7px;
     text-align: left;
 }
@@ -63,9 +63,10 @@ h1 {
 
 h2 {
     border-bottom: solid;
-    border-color: var(--lightest);
-    margin-left: 10px;
-    margin-right: 10px;
+    border-width: 0.5px;
+    border-color: var(--normal);
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .subtitle {
