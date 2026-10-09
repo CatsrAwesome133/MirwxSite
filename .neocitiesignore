@@ -4,5 +4,17 @@
 
 # Ignore OS-specific hidden system files
 .DS_Store
+.vscode/
 desktop.ini
 Thumbs.db
+
+# Dependency folders
+node_modules/
+
+# Local configuration & environment files
+package.json
+package-lock.json
+vite.config.js
+vite.config.ts
+.env
+.env.*
