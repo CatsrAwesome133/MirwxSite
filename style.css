@@ -237,6 +237,24 @@ a:hover {
     border-color: var(--normal);
 }
 
+/* special styling for navigation */
+#sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: 1000;
+    padding: 10px;
+}
+
+#nav-right{
+    text-align: right;
+    margin-top: -37px;
+}
+
+#nav-left{
+    text-align: left;
+    margin-top: -5px;
+}
 
 /* Resize Stuff */
 
