@@ -20,4 +20,4 @@ jobs:
       with:
         api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
         cleanup: true # Setting to true deletes files on Neocities that you deleted in Git
-        dist_dir: public # Change to the folder your site is in (e.g., public, dist, _site)
+        dist_dir: . # Change to the folder your site is in (e.g., public, dist, _site)
