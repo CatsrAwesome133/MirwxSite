@@ -1,4 +1,4 @@
-import anime from 'animejs';
+import anime from 'animejs/lib/anime.es.js';
 
 const box = document.querySelector('.box');
 const icon = document.querySelector('.img-icon');
