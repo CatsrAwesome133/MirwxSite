@@ -1,18 +1,11 @@
-import anime from 'animejs/lib/anime.es.js';
+import { animate } from 'animejs';
 
-const box = document.querySelector('.box');
-const icon = document.querySelector('.img-icon');
-
-anime({
-  targets: box,
+animate('.box', {
   translateX: 250,
-  duration: 2000,
-  easing: 'easeInOutQuad'
+  duration: 800
 });
 
-anime({
-  targets: icon,
+animate('.img-icon', {
   translateX: 250,
-  duration: 2000,
-  easing: 'easeInOutQuad'
+  duration: 800
 });
