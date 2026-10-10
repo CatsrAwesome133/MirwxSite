@@ -284,6 +284,35 @@ h2 {
 }
 
 
+/* for commission page*/
+
+.img-comm {
+    max-width: 200px;
+    border: none;
+    border-right: double;
+    border-color: var(--normal);
+    corner-shape: bevel;
+    border-radius: 5px;
+    display: block; /* Removes unwanted baseline spacing */
+}
+
+.grid-comm {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    column-gap: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.grid-comm div {
+  padding: 10px;
+  text-align: left;
+}
+
+
 
 /* Links */
 
