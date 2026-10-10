@@ -4,7 +4,7 @@ Hosted on https://mirwx.neocities.org/
 
 This currently mirrors the portfolio site (the `crescent-portfolio` branch), but it will likely diverge a lot in the upcoming months.
 
-The hackclub terra site & repo for it are at https://catsrawesome133.github.io/MirwxSite/ and https://github.com/CatsrAwesome133/MirwxSite/tree/crescent-portfolio
+**The hackclub terra site & repo for it are at https://catsrawesome133.github.io/MirwxSite/ and https://github.com/CatsrAwesome133/MirwxSite/tree/crescent-portfolio**
 
 These are only separate branches because they build from similar bases (cough couch `template.html` and `style.css`)
 
