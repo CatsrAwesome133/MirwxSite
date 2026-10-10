@@ -3,37 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Mira's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="pin2.ico">
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+        #top-banner {
+            position: fixed; 
+            top: 0; left: 50%; 
+            transform: translate(-50%, 0%);
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
     <div id="sticky-nav">
-        <p id="nav-left"><a href="index.html">Home</a></p>
-        <p id="nav-right"><a href="#title1">Back to Contents</a></p>
+        <p id="nav-left"><a href="index.html"><img class="img-nav" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129223884_mA2VHQLk65ifwpa.png"></a></p>
+        <p id="nav-right"><a href="#title0"><img class="img-nav" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129223914_Hk3waQ9qBSMrHdQ.png"></a></p>
     </div>
 
     <!-- Main Content -->
     <div>
-        <img class="banner" src="https://miras-random-files.tiiny.site/banner6.png">
-        <h1 id="title1">Mira's Digital Art Portfolio</h1>
+        <img class="top-banner banner" src="https://miras-random-files.tiiny.site/banner6.png">
+        <h1 style="anchor-name: --title" id="title0">Mira's Digital Art Portfolio</h1>
             <a class="subtitle" href="https://mir12wx.carrd.co/">Carrd Verison</a><a> - </a><a class="subtitle" href="https://drive.google.com/drive/folders/1-lxxH1Id_GTI3lfw3O0iBLjapVYqQqsj?usp=drive_link">Google Drive Verison</a>
         <p id="intro1">
-            Hello! I'm Mira, a (mostly) self-taught artist and this is my portfolio (technically). All pieces here are digital and made with Krita, some are very old, and others not so much. You can commission me by sending a message through Discord @mirwx
+            Hello! I'm Mira. I'm (mostly) self-taught artist and this is my portfolio (technically). 
+            All pieces here are digital and made with Krita, some are very old, and others not so much. 
+            You can commission me by sending a message through Discord @mirwx. 
+            Check out details <a href="comms.html">here</a> or <a href="https://docs.google.com/presentation/d/1tO2JMgabbvIfY-pYB1P7zGoBoEQUpWR-t9CCLgt7pac/edit?usp=sharing">here</a>, or just DM me with your requirements and I'll give a price!
         </p>
         <p class="fake-block">
             <span class="small">Contents</span><br />
             <a href="#posters">Posters</a> - 
-            <a href="#sets">Series</a> - 
             <a href="#splash-art">Splash Art</a> -
             <a href="#icons">Icons</a> - 
-            <a href="not_found.html">Animations</a>
+            <a href="#sets">Series</a> - 
+            <a href="#anim">Animations</a>
         </p>
 
         <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
 
         <!-- Thus begins the portfolio  -->
-        <div id="posters" class="image-section">
+        <div id="posters" class="box-thin">
             <h2>Posters</h2>
             <p>
                 <img class="img-gallery" src="https://mir12wx.carrd.co/assets/images/image09.jpg?v=a9cddc68">
@@ -62,14 +72,7 @@
             <p>
                 <img class="img-gallery" src="https://mir12wx.carrd.co/assets/images/image23.jpg?v=a9cddc68">
                 <br /><span class="subtitle">Eleodora</span>
-                <br /><span class="small">Artfight attack on Ciyamee</span>
-            </p>
-
-            <!--Template-->
-            <p>
-                <img class="img-gallery" src="">
-                <br /><span class="subtitle">Text</span>
-                <br /><span class="small">Desc</span>
+                <br /><span class="small">Artfight Attack on Ciyamee (2026)</span>
             </p>
         </div>
 
@@ -77,35 +80,52 @@
         <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
         
         <!-- Splash Art -->
-        <div id="splash-art" class="image-section">
-            <h2>Splash Art</h2>
+        <div id="splash-art" class="box-thin">
+            <h2>Concept, Merch, & Splash Art</h2>
             <p>
-                <img class="img-gallery" src="">
-                <br /><span class="subtitle">Text</span>
-                <br /><span class="small">Desc</span>
+                <img class="img-gallery" src="https://mir12wx.carrd.co/assets/images/image07.png?v=a9cddc68">
+                <br /><span class="subtitle">Siren Concept</span>
+                <br /><span class="small">She's the god of the sea</span>
             </p>
             <p>
-                <img class="img-gallery" src="">
-                <br /><span class="subtitle">Text</span>
-                <br /><span class="small">Desc</span>
+                <img class="img-gallery" src="https://images.artfight.net/character/LKDpdoTsw2YqOZZ3xdCT8jfDT4UwzFpoSNfjjCHO4TIkZAveXHhHA6t0ccWM.png?t=1784054015">
+                <br /><span class="subtitle">Terra Concept</span>
+                <br /><span class="small">God of the earth</span>
             </p>
             <p>
-                <img class="img-gallery" src="">
-                <br /><span class="subtitle">Text</span>
-                <br /><span class="small">Desc</span>
+                <img class="img-borderless" src="https://images.artfight.net/character/qzJUR0MWPvW7P10AATKuiHzJ5mx1hgRg01zupQYt5BZcO0AXmPvbi3jMpA7h.png?t=1784303247">
+                <br /><span class="subtitle">Aschel Concept</span>
+                <br /><span class="small">Someone tried to make a god and made them :D</span>
             </p>
             <p>
-                <img class="img-gallery" src="">
-                <br /><span class="subtitle">Text</span>
-                <br /><span class="small">Desc</span>
+                <img class="img-borderless" src="https://mir12wx.carrd.co/assets/images/image17.png?v=a9cddc68">
+                <br /><span class="subtitle">Seraph</span>
+                <br /><span class="small">Artfight Attack (2025)</span>
             </p>
-            
-            
-            <!--Template-->
             <p>
-                <img class="img-gallery" src="">
-                <br /><span class="subtitle">Text</span>
-                <br /><span class="small">Desc</span>
+                <img class="img-borderless" src="https://mir12wx.carrd.co/assets/images/image19.png?v=a9cddc68">
+                <br /><span class="subtitle">Hornet</span>
+                <br /><span class="small">Hollow Knight concept</span>
+            </p>
+            <p>
+                <img class="img-gallery" src="https://mir12wx.carrd.co/assets/images/image20.png?v=a9cddc68">
+                <br /><span class="subtitle">Phantom</span>
+                <br /><span class="small">Hollow Knight concept & Acrylic print</span>
+            </p>
+            <p>
+                <img class="img-borderless" src="https://images.artfight.net/attack/zsZtibugZ2S2hBk6twbe5hZP73oqSzFYQtg4se7SEpzbRzci3cGoMLuUPQeg.png?t=1783664024">
+                <br /><span class="subtitle">Jackaw</span>
+                <br /><span class="small">Artfight Attack (2026)</span>
+            </p>
+            <p>
+                <img class="img-borderless" src="https://images.artfight.net/attack/D70OfjUNu1gbOjbxFICezV77wj4q5i0SoN1cDMMICmPv4ukZ0FmQmGgFum7K.png?t=1784563896">
+                <br /><span class="subtitle">Biene</span>
+                <br /><span class="small">Artfight Attack on Batzel (2026)</span>
+            </p>
+            <p>
+                <img class="img-borderless" src="https://images.artfight.net/attack/aLIMMFyyFRt7XIN25wb8hRkRrQs1WgqH16oz2wzWjk1Szyz6A3PxJKfVlS2d.png?t=1783230271">
+                <br /><span class="subtitle">Dreamer</span>
+                <br /><span class="small">Artfight Attack on Skittle(2026)</span>
             </p>
         </div>
 
@@ -113,19 +133,15 @@
         <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
         
         <!-- Icons -->
-        <div id="icons" class="image-section">
+        <div id="icons" class="box-thin">
             <h2>Icons</h2>
             <p>
                 <img class="img-gallery" src="https://mir12wx.carrd.co/assets/images/image08.jpg?v=a9cddc68">
                 <br /><span class="subtitle">Patcher</span>
             </p>
             <p>
-                <img class="img-gallery" src="https://mir12wx.carrd.co/assets/images/gallery02/fa2f515e.jpg?v=a9cddc68">
-                <br /><span class="subtitle">Breeze</span>
-            </p>
-            <p>
-                <img class="img-gallery" src="https://mir12wx.carrd.co/assets/images/gallery02/c1e43d91.jpg?v=a9cddc68">
-                <br /><span class="subtitle">Whisper</span>
+                <img class="img-gallery" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129227158_kEF4QnNQVkuqt5r.png">
+                <br /><span class="subtitle">Snow & Lynx</span>
             </p>
             <p>
                 <img class="img-gallery" src="https://f2.toyhou.se/file/f2-toyhou-se/images/124580225_LB78WcEvjlfbRgI.png">
@@ -136,33 +152,82 @@
         <br />
         <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
         
-        <!-- This Div is going to be the end of me (scrolling gallery)-->
-        <div id="sets" class="image-section">
+        <!-- Series -->
+        <div id="sets" class="box-fit">
             <h2>Series</h2>
-            <p>Please middle click/swipe im tired</p>
 
-            <div class="img-scroll" id="first-series">
+            <div class="flex" id="1">
                 <div>
-                    <span><img class="img-gallery" src="https://64.media.tumblr.com/dbaa92c1e716f446021317e542bf2f81/2b18484e75bd38b9-49/s1280x1920/ccd40a0195e2f95c4a9e4adc58b4e1b5aa7958ca.pnj"></span>
+                    <span><img class="img-set" src="https://64.media.tumblr.com/dbaa92c1e716f446021317e542bf2f81/2b18484e75bd38b9-49/s1280x1920/ccd40a0195e2f95c4a9e4adc58b4e1b5aa7958ca.pnj"></span>
+                    <br /><span class="small">Karmelita</span>
                 </div>
                 <div>
-                    <span><img class="img-gallery" src="https://64.media.tumblr.com/427c61c79765f96e5bdc4f9d4bbe6521/61e15c05dd8594d7-8e/s1280x1920/64d8d701104f108af05c7c1632fa4fcf6162627e.pnj"></span>
+                    <span><img class="img-set" src="https://64.media.tumblr.com/427c61c79765f96e5bdc4f9d4bbe6521/61e15c05dd8594d7-8e/s1280x1920/64d8d701104f108af05c7c1632fa4fcf6162627e.pnj"></span>
+                    <br /><span class="small">Nyleth</span>
                 </div>
                 <div>
-                    <span><img class="img-gallery" src="https://64.media.tumblr.com/65a407131d6f7a6199bb5b6434f92302/163afa7ba1715539-ce/s1280x1920/a7b989064a586c1c4680de22b8b112529b76671a.pnj"></span>
+                    <span><img class="img-set" src="https://64.media.tumblr.com/65a407131d6f7a6199bb5b6434f92302/163afa7ba1715539-ce/s1280x1920/a7b989064a586c1c4680de22b8b112529b76671a.pnj"></span>
+                    <br /><span class="small">Clover Dancers</span>
                 </div>
             </div>
-            <br /><span class="subtitle">Old Hearts</span>
-            <br /><span class="small">Desc</span>
+            <p class="section">
+                <span class="subtitle">Old Hearts</span>
+                <br /><span class="small">Hollow Knight: Silksong fanart</span>
+            </p>
+            <br /><br />
 
-            <div class="img-scroll">
+            <div class="flex" id="2">
                 <div>
-                    <span><img class="img-gallery" src=""></span>
+                    <span><img class="img-set" src="https://mir12wx.carrd.co/assets/images/gallery02/fa2f515e.jpg?v=a9cddc68"></span>
+                    <br /><span class="small">Breeze</span>
                 </div>
                 <div>
-                    <span><img class="img-gallery" src=""></span>
+                    <span><img class="img-set" src="https://mir12wx.carrd.co/assets/images/gallery02/c1e43d91.jpg?v=a9cddc68"></span>
+                    <br /><span class="small">Whisper</span>
                 </div>
             </div>
+            <p class="section">
+                <span class="subtitle">Siblings</span>
+                <br /><span class="small">Hollow Knight OCs & Artfight icons</span>
+            </p>
+            <br />
+        </div>
+
+        <br />
+        <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
+        
+        <!-- Animation -->
+        <div id="anim" class="box-thin">
+            <h2>Animation</h2>
+            <p>In the event that the players fail,there are more examples <a href="https://drive.google.com/drive/folders/12kAHqTVaTdPpYkyt9ZowC6rAnvE9-q7W?usp=drive_link">here</a>!</p>
+            <p>
+                <iframe class="embed-gallery" src="https://user-cdn.hackclub-assets.com/01a123f4-1dd5-7c94-b27a-1aa346788dc9/11fix.mp4"></iframe>
+                <br /><span class="subtitle">Justice for the Vessels (M.A.P. part 11)</span>
+            </p>
+            <p>
+                <iframe class="embed-gallery" src="https://cdn.hackclub.com/01a123f4-1cac-729c-96a2-7abea55d27c5/final%20v10001-0234.mp4"></iframe>
+                <br /><span class="subtitle">Curses (M.A.P. part 12+13)</span>
+            </p>
+            <p>
+                <iframe class="embed-gallery" src="https://cdn.hackclub.com/01a123f4-1b42-780c-bc5f-1b64d0975a5e/fp%20stuff%20im%20doneeeASKNDICVVBJ.mp4"></iframe>
+                <br /><span class="subtitle">A Sadness Runs Through Him (M.A.P. part 12)</span>
+                <br /><span class="small">Process video on <a href="https://www.youtube.com/watch?v=nKaSUxw785k">YouTube</a></span>
+            </p>
+            <p>
+                <img class="img-gallery" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129228687_5ojeXQDEOJHJMAX.gif">
+                <br /><span class="subtitle">Boom</span>
+                <br /><span class="small">Hollow Knight fanart</span>
+            </p>
+            <p>
+                <img class="img-gallery" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129228654_qIUHJ3FNyQEdmU4.gif">
+                <br /><span class="subtitle">Icon</span>
+                <br /><span class="small">Submission for a contest</span>
+            </p>
+            <p>
+                <img class="img-borderless" src="https://images.artfight.net/attack/1FFfpakUCys199u9pnK1AqoaY8IWiWexawF0LSiS1rSbUUPXf2Z4aDYy35pf.gif?t=1783659375">
+                <br /><span class="subtitle">Vera</span>
+                <br /><span class="small">Artfight Attack (2026)</span>
+            </p>
         </div>
 
     </div>

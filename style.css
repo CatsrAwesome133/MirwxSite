@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Copse&family=Homemade+Apple&family=Indie+Flower&family=Kode+Mono:wght@400..700&family=LXGW+WenKai+Mono+TC:wght@300;400;700&family=Scope+One&display=swap');
 
 :root {
-    --bg: #24262e;
-    --soft-white: #eef7fa;
-    --lightest: #cfe3ee;
-    --midtone: #829eba;
-    --normal: #9fb8ce;
-    --small: #6886a8;
-    --darkest: #0d0f20;
+    --soft-white:   #eef7fa;
+    --lightest:     #cfe3ee;
+    --normal:       #9fb8ce;
+    --midtone:      #829eba;
+    --small:        #6886a8;
+    --bg:           #24262e;
+    --darkest:      #0d0f20;
 
-    --topbar-y: 5px;
+    --topbar-y:     5px;
+
+
     --nav-adjustment: var(--topbar-y);
 }
 
@@ -90,6 +92,14 @@ h1.small {
     text-shadow: 0px 0px 5px var(--midtone);
 }
 
+p.section {
+    border-top: solid 1px var(--small);
+    border-bottom: solid 1px var(--small);
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
 
 /* General Formatting*/
 
@@ -127,7 +137,7 @@ h2 {
 
 /* Images */
 /* intended for the portfolio */
-.image-section {
+.box-thin {
     border: double 2px var(--small);
     border-left: solid var(--small);
     border-radius: 7px;
@@ -137,12 +147,22 @@ h2 {
     background-color: rgb(from var(--small) r g b / 10%);
 }
 
-.image-section > p {
+.box-thin > p {
     margin: 20px;
 }
 
-.image-section > h2 {
+.box-thin > h2 {
     padding-bottom: 10px;
+}
+
+.box-fit {
+    border: double 2px var(--small);
+    border-left: solid var(--small);
+    border-radius: 7px;
+    corner-shape: bevel;
+    width: 75%;
+    margin: auto;
+    background-color: rgb(from var(--small) r g b / 10%);
 }
 
 /* icons. currently there is only one */
@@ -151,6 +171,16 @@ h2 {
     height: 20px;
     padding: 5px;
 }
+
+/* icons. these are bigger and strictly blue */
+.img-nav {
+    margin-top: -9px;
+    max-width: 30px;
+    max-height: 30px;
+    padding: 5px;
+    filter: brightness(0) saturate(100%) invert(92%) sepia(7%) saturate(656%) hue-rotate(171deg) brightness(99%) contrast(89%);
+}
+
 
 /* "gallery" images */
 /* also used within "image-section" classes */
@@ -163,6 +193,33 @@ h2 {
     border-radius: 5px;
 }
 
+.img-borderless {
+    max-width: 400px;
+    border: none;
+    border-bottom: double;
+    border-color: var(--normal);
+    corner-shape: bevel;
+    border-radius: 5px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+}
+
+.img-set {
+    max-width:90%;
+    flex: 1;
+    border: double;
+    border-left: solid;
+    border-color: var(--normal);
+    corner-shape: bevel;
+    border-radius: 5px;
+}
+
+/* The cursed */
 .img-scroll {
     border-top: solid 1px var(--small);
     border-bottom: solid 1px var(--small);
@@ -205,6 +262,27 @@ h2 {
 .make-blue {
     filter: brightness(0) saturate(100%) invert(92%) sepia(7%) saturate(656%) hue-rotate(171deg) brightness(99%) contrast(89%);
 }
+
+/* Styling the external container wrapper */
+/* Container to handle spacing and alignment */
+.video-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center; /* Centers the subtitles under the video */
+}
+
+/* The fixed iframe styling */
+.embed-gallery {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Automatically calculates correct height based on width */
+    border: double;
+    border-left: solid;
+    border-color: var(--normal);
+    corner-shape: bevel;
+    border-radius: 5px;
+    display: block; /* Removes unwanted baseline spacing */
+}
+
 
 
 /* Links */
@@ -253,12 +331,13 @@ a:hover {
     top: 0;
     background-color: rgba(0,0,0,0);
     z-index: 1000;
+    height: 10px;
     padding: 10px;
 }
 
 #nav-left {
     float: left;
-    margin-top: calc(-10px + var(--topbar-y));
+    margin-top: calc(-5px + var(--topbar-y));
     margin-bottom: 0;
     margin-left: 5vw;
     max-width: 45%;
@@ -266,7 +345,7 @@ a:hover {
 
 #nav-right {
     float: right;
-    margin-top: calc(-10px + var(--topbar-y));
+    margin-top: calc(-5px + var(--topbar-y));
     margin-bottom: 0;
     margin-right: 5vw;
     max-width: 45%;
@@ -284,11 +363,22 @@ a:hover {
         width: 95%;
     }
 
+    .embed-gallery {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
     #sticky-nav {
         background-color: rgb(from var(--darkest) r g b / 60%);
         padding-bottom: 23px;
-        border-bottom: solid 1px var(--normal);
+        border-bottom: double 3px var(--normal);
+        border-top: solid 1px var(--small);
         outline: solid 20px rgb(from var(--darkest) r g b / 60%);
         clip-path: inset(-20px -20px 0px -20px);
+    }
+
+    .box-fit {
+        width: 95%;
     }
 }

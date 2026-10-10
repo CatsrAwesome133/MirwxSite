@@ -18,3 +18,7 @@ vite.config.js
 vite.config.ts
 .env
 .env.*
+
+# Personal assets
+icons/
+*.kra
