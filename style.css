@@ -163,6 +163,7 @@ h2 {
     width: 75%;
     margin: auto;
     background-color: rgb(from var(--small) r g b / 10%);
+    margin-bottom: 15px;
 }
 
 /* icons. currently there is only one */
@@ -287,7 +288,7 @@ h2 {
 /* for commission page*/
 
 .img-comm {
-    max-width: 200px;
+    max-width: clamp(0px, 100%, 400px);
     border: none;
     border-right: double;
     border-color: var(--normal);
@@ -311,6 +312,7 @@ h2 {
   padding: 10px;
   text-align: left;
 }
+
 
 
 
@@ -381,7 +383,6 @@ a:hover {
 }
 
 /* Resize Stuff */
-
 @media only screen and (max-width: 600px) {
     .banner {
         max-width: 100%;
@@ -394,6 +395,19 @@ a:hover {
 
     .embed-gallery {
         width: 95%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .grid-comm {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-comm div {
+        margin-top: -20px;
     }
 }
 
