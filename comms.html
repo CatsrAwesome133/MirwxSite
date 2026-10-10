@@ -9,8 +9,27 @@
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
+    <style>
+        #top-banner {
+            position: fixed; 
+            top: 0; left: 50%; 
+            transform: translate(-50%, 0%);
+        }
+        .plushie-container {
+            bottom: 0;
+            left: 0;
+        }
+        .plushie {
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- plushie -->
+    <div class="plushie-container">
+      <img class="plushie" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129247569_1DXYQZxGqb3ZCQ8.png?1791641944">
+    </div>
     <!-- Navbar -->
     <div id="sticky-nav">
         <p id="nav-left"><a href="index.html"><img class="img-nav" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129223884_mA2VHQLk65ifwpa.png"></a></p>
@@ -32,31 +51,139 @@
         <a href="#ref">Reference sheets</a> - 
         <a href="#others">Others</a>
       </p>
-    </div>
 
 
-    <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
+      <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
 
 
-    <!-- Characters -->
-    <div id="ch" class="box-fit">
-        <h2>Character Art</h2>
-        
+      <!-- Characters -->
+      <div id="ch" class="box-fit">
+          <h2>Character Art</h2>
+          
+            <div class="grid-comm">
+                <div>
+                    <p>
+                    <img class="img-comm" src="https://images.artfight.net/attack/XmigtCJJf5g2hVL2eWxAo4APnayXsMobC4iUBrJYKJq3XvgPCKiWEAa2j5VR.png?t=1785175351">
+                    </p>
+                </div>
+
+                <div>
+                    <p><a><strong>Simple Characters (refer to Artfight rating)</strong></a></p>
+                    <p><span style="font-weight: 400;">Head/Bust Shot:<br />
+                      $5</span></p>
+                    <p><span style="font-weight: 400;">Half Body:<br />
+                      $10</span></p>
+                    <p><span style="font-weight: 400;">Full Body:<br />
+                      $15</span></p>
+                </div>
+            </div>
+
+            <h2></h2>
+
+            <div class="grid-comm">
+                <div>
+                    <p>
+                    <img class="img-comm" src="https://images.artfight.net/attack/AKQoHmTYSjWiY7HXeKg8Wsa4cmjKXld8qUEbuktt5TYVIwcxvhTOVa3mFVhF.png?t=1784299170">
+                    </p>
+                </div>
+
+                <div>
+                    <p><a><strong>Complex Characters (refer to Artfight rating)</strong></a></p>
+                    <p><span style="font-weight: 400;">Head/Bust Shot:</span><br />
+                        <span style="font-weight: 400;">$7</span></p>
+                    <p><span style="font-weight: 400;">Half Body:</span><br />
+                        <span style="font-weight: 400;">$14</span></p>
+                    <p><span style="font-weight: 400;">Full Body:</span><br />
+                        <span style="font-weight: 400;">$20</span></p>
+                </div>
+          </div>
+          <br />
+      </div>
+
+
+      <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
+
+
+      <!-- Backgrounds -->
+      <div id="bg" class="box-fit">
+          <h2>Backgrounds</h2>
+
           <div class="grid-comm">
               <div>
                   <p>
-                  <img class="img-comm" src="https://images.artfight.net/attack/XmigtCJJf5g2hVL2eWxAo4APnayXsMobC4iUBrJYKJq3XvgPCKiWEAa2j5VR.png?t=1785175351">
+                  <img class="img-comm" src="https://64.media.tumblr.com/845ae676771b3d7c2b40ca8bbf379200/2fa8505e40f9637f-4e/s2048x3072/4242191bebacd3d921f773f4bd1ab6b49105075d.pnj">
+                  </p>
+                  <p>
+                  <img class="img-comm" src="https://images.artfight.net/attack/lkSZvG1A2ICG3TH8u76Qz730chvjbcpUDLSakcUNQfbWqsR9AUehFa5ry6hK.png?t=1751633907">
                   </p>
               </div>
 
               <div>
-                  <p><a><strong>Simple Characters (refer to Artfight rating)</strong></a></p>
-                  <p><span style="font-weight: 400;">Head/Bust Shot:<br />
+                  <p><a><strong>Complex</strong></a></p>
+                  <p><span style="font-weight: 400;">Polished/Artfight:<br />
+                    + $5-$10*</span></p>
+                  <p><span style="font-weight: 400;">Painterly:<br />
+                    + $10-$15* (assuming it&rsquo;s not bg-focused already)</span></p>
+                  <p><span style="font-weight: 400;">Concept:<br />
+                    + $2</span></p>
+              </div>
+          </div>
+      </div>
+
+
+      <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
+
+
+      <!-- Reference Sheets -->
+      <div id="ref" class="box-fit">
+          <h2>Reference Sheets</h2>
+
+          <div class="grid-comm">
+              <div>
+                  <p>
+                  <img class="img-comm" src="https://images.artfight.net/character/5jiv9LPPocEKxI0DhPJ9mCJn4i8MyfwIArp2JOq6TCInhMa7rcqbT5ITxpmm.png?t=1776888071">
+                  </p>
+                  <p>
+                  <img class="img-comm" src="https://images.artfight.net/character/B2ynaAKDjFsQK1DJMrf7FXjw6YxaUOBuDLn13rcru7SC7XnHXgHxGLMJySce.png?t=1762083080">
+                  </p>
+                  <p>
+                  <img class="img-comm" src="https://images.artfight.net/character/UKjLNIBrU4wlSkSSndd5oHXQKkadOLv2SbFgSTqqZr1PRL6a4BigcwqQEIOt.png?t=1770220179">
+                  </p>
+              </div>
+
+              <div>
+                  <p><span style="font-weight: 400;">It&rsquo;s pretty much just a bunch of characters without rendering. And no cool poses. Mostly. And some bonus doodles.</span></p>
+                  <p><span style="font-weight: 400;">Said bonus doodles don&rsquo;t cost anything, you can request certain things to be drawn but I stop when the page fills.</span></p>
+                  <p>· -</p>
+                  <p><a><strong>Price per polished character drawing</strong></a></p>
+                  <p><span style="font-weight: 400;">Waist up:<br />
                     $5</span></p>
-                  <p><span style="font-weight: 400;">Half Body:<br />
-                    $10</span></p>
-                  <p><span style="font-weight: 400;">Full Body:<br />
-                    $15</span></p>
+                  <p><span style="font-weight: 400;">Full body:<br />
+                    $7</span></p>
+              </div>
+          </div>
+      </div>
+
+
+      <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
+
+      
+      <!-- Others -->
+      <div id="" class="box-fit">
+          <h2>title</h2>
+
+          <div class="grid-comm">
+              <div>
+                  <p>
+                  <img class="img-comm" src="https://images.artfight.net/attack/xXZD9NJbcplN3N8UAwUiVvU9ecMWDO7F1p3gA4qeL0IPl6kfYPT3YQrUZAEn.png?t=1752846944">
+                  </p>
+              </div>
+
+              <div>
+                  <p><a><strong>Extra characters</strong></a></p>
+                  <p><strong>If they&rsquo;re simple and in the background, they count as props</strong></p>
+                  <p><span style="font-weight: 400;">If there is a proper interaction going on, the price is multiplied by the amount of characters*</span></p>
+                  <p><span style="font-weight: 400;">*However if there is a background the added background price is ignored</span></p>
               </div>
           </div>
 
@@ -65,106 +192,59 @@
           <div class="grid-comm">
               <div>
                   <p>
-                  <img class="img-comm" src="https://images.artfight.net/attack/AKQoHmTYSjWiY7HXeKg8Wsa4cmjKXld8qUEbuktt5TYVIwcxvhTOVa3mFVhF.png?t=1784299170">
+                  <img class="img-comm" src="https://64.media.tumblr.com/c27d257044e25392062a483c7a797e77/417f7fbc12ec8fdb-28/s1280x1920/1885a4b43879e88137d2b85d42d62f72d9ed8875.pnj">
                   </p>
               </div>
 
               <div>
-                  <p><a><strong>Complex Characters (refer to Artfight rating)</strong></a></p>
-                  <p><span style="font-weight: 400;">Head/Bust Shot:</span><br />
-                      <span style="font-weight: 400;">$7</span></p>
-                  <p><span style="font-weight: 400;">Half Body:</span><br />
-                      <span style="font-weight: 400;">$14</span></p>
-                  <p><span style="font-weight: 400;">Full Body:</span><br />
-                      <span style="font-weight: 400;">$20</span></p>
+                  <p><a><strong>Shading</strong></a></p>
+                  <p><strong>You can specify no shading for a 20% reduction in price.</strong><span style="font-weight: 400;"> On default i&rsquo;ll be coloring and shading everything</span></p>
               </div>
-        </div>
-        <br />
-    </div>
+          </div>
+
+          <h2></h2>
+
+          <div class="grid-comm">
+              <div>
+                  <p>
+                  <img class="img-comm" src="">
+                  </p>
+              </div>
+
+              <div>
+                  <p><a><strong>Pieces with no characters</strong></a></p>
+                  <p><span style="font-weight: 400;">If it&rsquo;s a prop, It counts as a headshot/halfbody depending on complexity</span></p>
+                  <p><span style="font-weight: 400;">If it&rsquo;s an animal, no that is a character go back- /lh</span></p>
+                  <p><span style="font-weight: 400;">If it&rsquo;s solely a background, $15-25 depending on style and complexity, ask me for details</span></p>
+                  <p><span style="font-weight: 400;">(a hand is a prop i swear guys trust me)</span></p>
+              </div>
+          </div>
+
+          <h2></h2>
+          
+          <div class="grid-comm">
+              <div>
+                  <p>
+                  <img class="img-comm" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129247684_jMwGju2NjIMKNEw.png">
+                  </p>
+              </div>
+
+              <div>
+                  <p><a><strong>...& More!</strong></a></p>
+                  <p>Check them out on the <a href="https://docs.google.com/presentation/d/1tO2JMgabbvIfY-pYB1P7zGoBoEQUpWR-t9CCLgt7pac/edit?usp=sharing">google slides</a>, <a href="not_found.html">expanded site</a>, or just DM me about it!</p>
+                  <p>If you have custom requirements, feel free to contact me about it! Discord <a>@mirwx</a> is preferred.</p>
+              </div>
+          </div>
+      </div>
 
 
-    <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
+      <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
+      <p>Thanks for giving me you time and checking things out! May the ads ever evade you :D</p>
+      <img class="banner" src="https://mirwxfileuploads.tiiny.site/_bottom-banner-mystery.png">
+      
+      <p style="margin: 20px;"><br /></p>
 
 
-    <!-- Backgrounds -->
-    <div id="bg" class="box-fit">
-        <h2>Backgrounds</h2>
-
-        <div class="grid-comm">
-            <div>
-                <p>
-                <img class="img-comm" src="https://64.media.tumblr.com/845ae676771b3d7c2b40ca8bbf379200/2fa8505e40f9637f-4e/s2048x3072/4242191bebacd3d921f773f4bd1ab6b49105075d.pnj">
-                </p>
-                <p>
-                <img class="img-comm" src="https://images.artfight.net/attack/lkSZvG1A2ICG3TH8u76Qz730chvjbcpUDLSakcUNQfbWqsR9AUehFa5ry6hK.png?t=1751633907">
-                </p>
-            </div>
-
-            <div>
-                <p><a><strong>Complex</strong></a></p>
-                <p><span style="font-weight: 400;">Polished/Artfight:<br />
-                  + $5-$10*</span></p>
-                <p><span style="font-weight: 400;">Painterly:<br />
-                  + $10-$15* (assuming it&rsquo;s not bg-focused already)</span></p>
-                <p><span style="font-weight: 400;">Concept:<br />
-                  + $2</span></p>
-            </div>
-        </div>
-    </div>
-
-
-    <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
-
-
-<!-- Reference Sheets -->
-    <div id="ref" class="box-fit">
-        <h2>Reference Sheets</h2>
-
-        <div class="grid-comm">
-            <div>
-                <p>
-                <img class="img-comm" src="https://images.artfight.net/character/5jiv9LPPocEKxI0DhPJ9mCJn4i8MyfwIArp2JOq6TCInhMa7rcqbT5ITxpmm.png?t=1776888071">
-                </p>
-                <p>
-                <img class="img-comm" src="https://images.artfight.net/character/B2ynaAKDjFsQK1DJMrf7FXjw6YxaUOBuDLn13rcru7SC7XnHXgHxGLMJySce.png?t=1762083080">
-                </p>
-                <p>
-                <img class="img-comm" src="https://images.artfight.net/character/UKjLNIBrU4wlSkSSndd5oHXQKkadOLv2SbFgSTqqZr1PRL6a4BigcwqQEIOt.png?t=1770220179">
-                </p>
-            </div>
-
-            <div>
-                <p><span style="font-weight: 400;">It&rsquo;s pretty much just the polish style without any rendering. And no cool poses. Mostly. And some bonus doodles.</span></p>
-                <p><span style="font-weight: 400;">Said bonus doodles don&rsquo;t cost anything, you can request certain things to be drawn but I stop when the page fills.</span></p>
-                <p>· -</p>
-                <p><a><strong>Price per polished character drawing</strong></a></p>
-                <p><span style="font-weight: 400;">Waist up:<br />
-                  $5</span></p>
-                <p><span style="font-weight: 400;">Full body:<br />
-                  $7</span></p>
-            </div>
-        </div>
-    </div>
-
-
-    <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
-
-
-    <!-- Template -->
-    <div id="" class="box-fit">
-        <h2>title/h2>
-
-        <div class="grid-comm">
-            <div>
-                <p>
-                <img class="img-comm" src="">
-                </p>
-            </div>
-
-            <div>
-                
-            </div>
-        </div>
     </div>
   </body>
 </html>

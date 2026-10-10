@@ -10,7 +10,18 @@
          This makes it easier to make new pages for your site. -->
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
   </head>
-  <body>
+  <body style="overflow-x: hidden;">
+    <!-- plushie -->
+    <div class="plushie-container">
+      <img class="plushie" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129247569_1DXYQZxGqb3ZCQ8.png?1791641944">
+      <p class="subtitle"><a>Tip: </a>click and hold the Mira to pet them!</p>
+    </div>
+    <div class="plushie-container" style="left:0px;">
+      <img class="plushie" style="left:0px;" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129252123_3I6Jasgae0s5HRl.png">
+      <p class="subtitle"><a>Tip: </a>click and hold the Ghost to pet them!</p>
+    </div>
+
+    <!-- main -->
     <div>
       <img class="banner" src="https://miras-random-files.tiiny.site/banner6.png">
       <p>
@@ -34,36 +45,77 @@
         <span class="small">Related Pages</span><br />
         <a href="portfolio.html">Portfolio</a> - 
         <a href="comms.html">Commissions</a> -  
-        <a href="#resources">Resources</a>
+        <a href="#guide">Guide</a> -  
+        <a href="#resources">Personal Resources</a>
       </p>
     </div>
-    <div>
-      <h1 id="resources">
-        Resources & Testing Stuff
-      </h1>
+
+
+    <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
+
+
+    <div id="guide">
+      <h2>Guide to the site</h2>
+
+      <p><a>There are 2 buttons:</a></p>
+
+      <div>
+        <p><a><img class="img-icon make-blue" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129223884_mA2VHQLk65ifwpa.png"></a> Home <br/>
+          <a><img class="img-icon make-blue" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129223914_Hk3waQ9qBSMrHdQ.png"></a> Table of Contents</p>
+      </div>
+
+      <p>Click them to navigate the site!</p>
+      <p><a>There is also a table of contents at the top of every page, like this one here:</a></p>
       <p class="fake-block">
         <span class="small">Related Pages</span><br />
-        <a href="not_found.html">404 Page</a> - 
-        <a href="template.html">Template</a>
+        <a href="portfolio.html">Portfolio</a> - 
+        <a href="comms.html">Commissions</a> -  
+        <a href="#guide">Guide</a> -  
+        <a href="#resources">Personal Resources</a>
       </p>
-      <p>This is a paragraph! Here's how you make a link: <a href="https://neocities.org">Neocities</a>.</p>
+      <p>Click these to navigate the page!</p>
+    </div>
 
-      <p><img class="img-icon make-blue" src="https://miras-random-files.tiiny.site/a-cropped.svg"><img class="img-icon" src="https://miras-random-files.tiiny.site/a-cropped.svg"></p>
 
-      <p>Here's how to make a list:</p>
+    <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
 
-      <ul>
-        <li>First thing</li>
-        <li>Second thing</li>
-        <li>Third thing</li>
-      </ul>
 
-      <p>A code block:</p>
-      <p class="code-block">
-        <span class="small">Python</span><br />
-        print("Hello World")</p>
+    <div id="resources">
+      <details>
+        <summary class="dropdown-btn">
+          <span id="fake-header">
+            Resources & Testing Stuff
+          </span>
+        </summary>
 
-      <p>To learn more HTML/CSS, check out these <a href="https://neocities.org/tutorials">tutorials</a>!</p>
+        <div class="dropdown-content">
+          <p></p>
+          <p class="fake-block">
+            <span class="small">Related Pages</span><br />
+            <a href="not_found.html">404 Page</a> - 
+            <a href="template.html">Template</a>
+          </p>
+          <p>This is a paragraph! Here's how you make a link: <a href="https://neocities.org">Neocities</a>.</p>
+
+          <p><img class="img-icon make-blue" src="https://miras-random-files.tiiny.site/a-cropped.svg"><img class="img-icon" src="https://miras-random-files.tiiny.site/a-cropped.svg"></p>
+
+          <p>Here's how to make a list:</p>
+
+          <ul>
+            <li>First thing</li>
+            <li>Second thing</li>
+            <li>Third thing</li>
+          </ul>
+
+          <p>A code block:</p>
+          <p class="code-block">
+            <span class="small">Python</span><br />
+            print("Hello World")</p>
+
+          <p>To learn more HTML/CSS, check out these <a href="https://neocities.org/tutorials">tutorials</a>!</p>
+        </div>
+      </details>
+      
     </div>
   </body>
 </html>
