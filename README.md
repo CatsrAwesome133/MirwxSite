@@ -2,7 +2,7 @@ This is the main (and VERY WIP) site for my worlds, stories, projects, character
 
 Hosted on https://mirwx.neocities.org/
 
-This currently mirrors the portfolio site (the `crescent-portfolio` branch), but it will likely diverge a lot in the upcoming months.
+This contains most of the updates & revamps from the terra site!
 
 **The hackclub terra site & repo for it are at https://catsrawesome133.github.io/MirwxSite/ and https://github.com/CatsrAwesome133/MirwxSite/tree/crescent-portfolio**
 
