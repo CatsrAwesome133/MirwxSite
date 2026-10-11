@@ -1,6 +1,7 @@
 do the other sites askwdlknfbldkm
 fix column gap in portfolio
 ^ try to snap container width w/logic
+fix mobile formatting in comms.html
 
 worlds formatting (+JS?)
 ^ try going for a tab bar style
