@@ -9,6 +9,44 @@
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+      .nav-box {
+        display: grid;
+        justify-content: center;
+        grid-auto-flow: column;
+      }
+      .img-nav {
+        width: auto;
+        height: 100px;
+        max-width: none;
+        max-height: none;
+        filter: drop-shadow(0 0 2px var(--small)) brightness(0) saturate(100%) invert(74%) sepia(12%) saturate(554%) hue-rotate(166deg) brightness(98%) contrast(87%);
+      }
+      .img-nav:hover {
+        width: auto;
+        height: 100px;
+        max-width: none;
+        max-height: none;
+        filter: inherit;
+      }
+      .nav-box div {
+        position: relative;
+        bottom: 0px;
+        transition: bottom 0.1s ease-out; 
+      }
+      .nav-box div:hover {
+        position: relative;
+        bottom: 5px;
+        filter: drop-shadow(0 0 5px var(--small)) brightness(0) saturate(100%) invert(92%) sepia(7%) saturate(656%) hue-rotate(171deg) brightness(99%) contrast(89%);
+        color: var(--lightest);
+        transition: bottom 0.1s ease-in; 
+
+      }
+      .nav-box p {
+        font-family: inherit;
+        font-size: inherit;
+      }
+    </style>
   </head>
   <body style="overflow-x: hidden;">
     <!-- plushie -->
@@ -30,30 +68,50 @@
       <h1 id="title0">Mira's Site</h1>
             <a class="subtitle" href="https://www.tumblr.com/mirwx">@mirwx</a>
       <p style="display: block;">
-        <a href="https://www.youtube.com/channel/UCxW7Q8UN-7SZ1ZkJ-NbjCrw"><img class="img-icon make-blue" src="https://cdn-icons-png.flaticon.com/512/49/49323.png"></a>
-        <a href="https://www.tumblr.com/mirwx"><img class="img-icon make-blue" src="https://www.svgrepo.com/show/340624/logo-youtube.svg"></a>
+        <a href="https://www.tumblr.com/mirwx"><img class="img-icon make-blue" src="https://cdn-icons-png.flaticon.com/512/49/49323.png"></a>
+        <a href="https://www.youtube.com/channel/UCxW7Q8UN-7SZ1ZkJ-NbjCrw"><img class="img-icon make-blue" src="https://www.svgrepo.com/show/340624/logo-youtube.svg"></a>
         <a href="https://artfight.net/~MirWX"><img class="img-icon make-blue" src="https://i.namu.wiki/i/BMJ0w2GG2mzeyO12-VvpY6FSBeacqPBQPkT86dJRwbOSIbxL7EC93RiSXhBZzK0bi9p6oi6_w0SlZGe7kcjHhA.webp"></a>
         <a href="https://toyhou.se/Mirwx"><img class="img-icon make-blue" src="https://static.wikia.nocookie.net/logopedia/images/c/cb/Toyhouse.svg/revision/latest?cb=20230320145821"></a>
         
         <br />
-        <a href="">Youtube</a>
+        <a href="https://catsrawesome133.github.io/MirwxSite/">Art Site</a>
       </p>
       <p id="intro0">
         Hello! I'm Mira, a self-taught artist. I like indie games, especially finding lore, though actual gameplay not so much. My favorites are currently Hollow Knight and Rain World.
       </p>
-      <p class="fake-block">
-        <span class="small">Related Pages</span><br />
-        <a href="portfolio.html">Portfolio</a> - 
-        <a href="comms.html">Commissions</a> -  
-        <a href="#guide">Guide</a> -  
-        <a href="#resources">Personal Resources</a>
-      </p>
+      <p>I use she/they</p>
+
+      <!-- Navigation -->
+      <div class="fake-block">
+        <span class="small">Related Pages</span>
+        <div class="nav-box">
+          <div>
+            <a href="portfolio.html">
+            <p><img class="img-nav" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129298840_OMje6JjsTeLJhNn.png"></p>
+            <p>Portfolio </p>
+            </a>
+          </div>
+          <div>
+            <a href="comms.html">
+            <p><img class="img-nav" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129298851_Zg0xS6dFT7fsLVz.png"></p>
+            <p>Commissions </p>
+            </a>
+          </div>
+          <div>
+            <a href="worlds.html">
+            <p><img class="img-nav" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129298847_lyWjGqp4rjyZQdT.png"></p>
+            <p>Worlds </p>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
 
     <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
 
 
+    <!-- Content -->
     <div id="guide">
       <h2>Guide to the site</h2>
 

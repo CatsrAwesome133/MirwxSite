@@ -101,6 +101,7 @@ p.section {
 }
 
 
+
 /* General Formatting*/
 
 body {
@@ -133,6 +134,7 @@ h2 {
     margin-left: 5%;
     margin-right: 5%;
 }
+
 
 
 /* Images */
@@ -172,6 +174,28 @@ h2 {
     height: 20px;
     padding: 5px;
     margin-bottom: -10px;
+    position: relative;
+    bottom: 0px;
+    transform: scale(1);
+    filter: drop-shadow(0 0 1px var(--small));
+    transition: bottom 0.05s ease-out, transform 0.1s ease-out; 
+}
+.img-icon:hover {
+    position: relative;
+    bottom: 5px;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 3px var(--small));
+    transition: bottom 0.1s ease-in, transform 0.05s ease-in; 
+}
+.img-icon.make-blue {
+    filter: drop-shadow(0 0 1px var(--small)) brightness(0) saturate(100%) invert(92%) sepia(7%) saturate(656%) hue-rotate(171deg) brightness(99%) contrast(89%);
+}
+.img-icon.make-blue:hover {
+    position: relative;
+    bottom: 3px;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 3px var(--midtone)) brightness(0) saturate(100%) invert(92%) sepia(7%) saturate(656%) hue-rotate(171deg) brightness(99%) contrast(89%);
+    transition: bottom 0.05s ease-in, transform 0.05s ease-in; 
 }
 
 /* icons. these are bigger and strictly blue */
@@ -363,8 +387,7 @@ a:hover {
 /* special styling for pfp icons. "copies" carrd. */
 #pfp {
     border-radius: 50%;
-    height: 100px;
-    transform: scale(1.5); 
+    width: clamp(200px, 30vw, 400px);
     margin: 10px;
     margin-top: 20px;
     border: inset 1px;
@@ -479,6 +502,8 @@ a:hover {
 }
 
 
+
+
 /* Resize Stuff */
 @media only screen and (max-width: 600px) {
     .banner {
@@ -494,6 +519,7 @@ a:hover {
         width: 95%;
     }
 }
+
 
 @media only screen and (max-width: 480px) {
     .grid-comm {
@@ -514,6 +540,7 @@ a:hover {
     }
 }
 
+
 @media only screen and (max-width: 800px) {
     #sticky-nav {
         background-color: rgb(from var(--darkest) r g b / 60%);
@@ -527,4 +554,22 @@ a:hover {
     .box-fit {
         width: 95%;
     }
+}
+
+
+@media only screen and (min-width: 800px) {
+    .grid-display {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 460px);
+        justify-content: center;
+        gap: 2vw;
+        grid-template-rows: masonry; 
+    }
+}
+
+@supports (grid-template-rows: masonry) {
+  /* This code runs only in browsers that support CSS Grid */
+  .grid-display {
+        grid-template-rows: masonry;
+  }
 }
