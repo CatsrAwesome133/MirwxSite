@@ -215,6 +215,12 @@ h2 {
 }
 
 
+.helper {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
 /* "gallery" images */
 /* also used within "image-section" classes */
 .img-gallery {
