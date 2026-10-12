@@ -148,6 +148,7 @@ h2:hover {
     border-left: solid var(--small);
     border-radius: 7px;
     corner-shape: bevel;
+    width: 75%;
     max-width: 460px;
     margin: auto;
     background-color: rgb(from var(--small) r g b / 10%);
