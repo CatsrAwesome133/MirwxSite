@@ -350,7 +350,6 @@ h2 {
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
-    column-gap: 0px;
     justify-content: center;
     align-items: center;
     margin-top: -20px;
@@ -360,6 +359,11 @@ h2 {
 .grid-comm div {
   padding: 10px;
   text-align: left;
+}
+
+.invis {
+    opacity: 0;
+    z-index: -1;
 }
 
 
@@ -567,7 +571,7 @@ a:hover {
 }
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1061px) {
     .grid-display {
         column-width: 460px; 
         column-gap: 2vw; 
@@ -579,12 +583,13 @@ a:hover {
     }
 }
 
+
 @supports (display: grid-lanes) {
-  /* This code runs only in browsers that support CSS Grid */
-  .grid-display {
-        display: grid-lanes;
-        grid-template-columns: repeat(auto-fill, 460px);
-        gap: 2vw;
-        justify-content: center;
-  }
+      /* This code runs only in browsers that support CSS Grid */
+      .grid-display {
+            display: grid-lanes;
+            grid-template-columns: repeat(auto-fill, 460px);
+            gap: 2vw;
+            justify-content: center;
+      }
 }
