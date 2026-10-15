@@ -13,3 +13,5 @@ vite.config.ts
 .env.*
 icons/
 *.kra
+resources/
+.idea/
