@@ -157,6 +157,7 @@ h2 {
     padding-bottom: 10px;
 }
 
+
 .box-fit {
     border: double 2px var(--small);
     border-left: solid var(--small);
@@ -167,6 +168,65 @@ h2 {
     background-color: rgb(from var(--small) r g b / 10%);
     margin-bottom: 15px;
 }
+
+.big-container {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    height: 100dvh;
+    scrollbar-width: none;
+  
+    /* Safari and Chrome (WebKit) */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.box-nav-container {
+    position: -webkit-sticky;
+    position: sticky;
+    flex-basis: 200px;
+    flex-shrink: 20%;
+    flex-grow: 0%;
+    display: grid;
+    grid-template-rows: auto;
+    margin-left: 20px;
+    margin-right: 10px;
+    
+    top: 0;
+    align-self: flex-start;
+}
+
+.box-nav {
+    border: double 2px var(--small);
+    border-left: solid var(--small);
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    corner-shape: bevel;
+    margin: auto;
+    background-color: rgb(from var(--small) r g b / 10%);
+    margin-bottom: 15px;
+}
+
+.box-menu {
+    flex: 100%;
+}
+
+.box-menu div {
+    border: double 2px var(--small);
+    border-left: solid var(--small);
+    border-radius: 7px;
+    corner-shape: bevel;
+    margin: auto;
+    background-color: rgb(from var(--small) r g b / 10%);
+    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-left: 10px;
+    word-break: break-word;
+}
+
+
 
 /* icons. currently there is only one */
 .img-icon {
@@ -234,6 +294,7 @@ h2 {
 
 .img-borderless {
     max-width: 400px;
+    width: 100%;
     border: none;
     border-bottom: double;
     border-color: var(--normal);
