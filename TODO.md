@@ -1,18 +1,25 @@
 ~~add the damn home button~~ - DONE
+
 ~~add a back to contents button~~ - DONE
+
 ~~^sticky on top~~ - DONE
 
 
 **do the other sites askwdlknfbldkm**
-> worlds - WIP
-> chars
-> projects
-> now page?
+
+-  worlds - WIP
+
+-  chars
+
+-  projects
+
+-  now page?
+
 
 **specific stuff**
-make series section stick to bottom w/ full width in portfolio
-reformat & edit comms page
-worlds formatting (+JS?)
-~~^ try going for a tab bar style~~ DONE
-^> fix scrolling
-~~^ draw icons & revise names~~ - DONE (for now)
+- make series section stick to bottom w/ full width in portfolio
+- reformat & edit comms page
+- worlds formatting (+JS?)
+- ~~^ try going for a tab bar style~~ DONE
+- ^> fix scrolling
+- ~~^ draw icons & revise names~~ - DONE (for now)
