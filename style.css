@@ -172,7 +172,7 @@ h2 {
 .big-container {
     display: flex;
     width: 100%;
-    overflow: auto;
+    overflow-y: auto;
     height: 100dvh;
     scrollbar-width: none;
   
