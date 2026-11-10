@@ -22,3 +22,8 @@
 - ~~add the damn home button~~ - DONE
 - ~~add a back to contents button~~ - DONE
 - ~~^sticky on top~~ - DONE
+- animations
+- background image (static/parallax)
+- move writing to a .md file & import it
+- draw writing icon
+- draw icons for worlds

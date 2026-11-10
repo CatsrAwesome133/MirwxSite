@@ -1,22 +1,49 @@
-function myFunction() {
-    document.getElementById("demo1").style.display = "none";
-}
-
-// 1. Select the division element
-const demo1 = document.getElementById('1');
-const demo2 = document.getElementById('2');
-
-const test1 = document.getElementById('test1');
-const test2 = document.getElementById('test2');
-
-// 2. Add the click event listener
+// Demos
 function one() {
-    // You can also change styles, text, or structure here
     document.getElementById('test1').style.display='block'
     document.getElementById('test2').style.display='none'
 };
 function two() {
-    // You can also change styles, text, or structure here
     document.getElementById('test1').style.display='none'
     document.getElementById('test2').style.display='block'
 };
+
+// Main menu thing
+const blocks = [
+    'content-1',
+    'content-2'
+];
+
+const ficUntitled = [
+    'untitled-1',
+    'untitled-2'
+];
+
+// "element" is the ID of the element to display
+function switchBlock(element, collection) {
+    collection.forEach(e => {
+        document.getElementById(e).style.display = 'none';
+    });
+    document.getElementById(element).style.display = 'block';
+    document.getElementById(element).animate([
+        { transform: 'translateX(100px)', opacity: 0, offset: 0},
+        { transform: 'translateX(0px)', opacity: 1, offset: 1}
+        ], {
+        duration: 300,
+        iterations: 1,
+        easing: 'ease-in-out',
+        fill: 'forwards'
+        });
+}
+
+function reformatWriting() {
+    const elements = document.querySelectorAll('.bar-scene');
+
+    elements.forEach(element => {
+    element.textContent = '✧';
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    reformatWriting();
+});

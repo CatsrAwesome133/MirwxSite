@@ -167,6 +167,13 @@ h2 {
     margin: auto;
     background-color: rgb(from var(--small) r g b / 10%);
     margin-bottom: 15px;
+    padding-bottom: 25px;
+}
+
+.box-fit > p {
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: none;
 }
 
 .big-container {
@@ -226,6 +233,34 @@ h2 {
     word-break: break-word;
 }
 
+.nav-image {
+    display: grid;
+    margin: auto;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.nav-image div {
+    border: double 2px var(--small);
+    border-left: solid var(--small);
+    border-radius: 7px;
+    corner-shape: bevel;
+    background-color: rgb(from var(--small) r g b / 10%);
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.nav-image div p {
+    margin: 0px;
+    padding: 0px;
+}
+
 
 
 /* icons. currently there is only one */
@@ -265,6 +300,7 @@ h2 {
     max-height: 30px;
     padding: 5px;
     filter: drop-shadow(0 0 2px var(--small)) brightness(0) saturate(100%) invert(92%) sepia(7%) saturate(656%) hue-rotate(171deg) brightness(99%) contrast(89%);
+    transition: filter 0.1s ease-in, transform 0.1s ease-in;
 }
 .img-nav:hover {
     margin-top: -9px;
@@ -272,6 +308,15 @@ h2 {
     max-height: 30px;
     padding: 5px;
     filter: drop-shadow(0 0 5px var(--small)) brightness(0) saturate(100%) invert(92%) sepia(7%) saturate(656%) hue-rotate(171deg) brightness(99%) contrast(89%);
+    transform: scale(1.1, 1.1) translateY(2px);
+    transition: filter 0.05s ease-out, transform 0.05s ease-out;
+}
+.nav-box .img-nav {
+    transition: none;
+}
+.nav-box .img-nav:hover {
+    transform: none;
+    transition: none;
 }
 
 
@@ -428,6 +473,33 @@ h2 {
 }
 
 
+/* Really General Classes */
+.center {
+    text-align: center;
+}
+
+.writing {
+    text-align: left;
+}
+.writing h2 {
+    text-align: center;
+}
+
+.bar-scene {
+    color: var(--lightest);
+    text-shadow: 0px 0px 5px var(--normal);
+    transition: filter 0.2s ease-out, transform 0.2s ease-out;
+}
+.bar-scene:hover {
+    text-shadow: 0px 0px 7px var(--lightest);
+    transform: scale(1.1, 1.1);
+    transition: filter 0.1s ease-out, transform 0.1s ease-out;
+}
+
+.writing .box-thin {
+    background-color: rgb(from var(--bg) r g b / 40%);
+}
+
 
 
 /* Links */
@@ -458,7 +530,7 @@ a:hover {
 /* special styling for pfp icons. "copies" carrd. */
 #pfp {
     border-radius: 50%;
-    width: clamp(200px, 30vw, 400px);
+    width: clamp(200px, 30vw, 340px);
     margin: 10px;
     margin-top: 20px;
     border: inset 1px;

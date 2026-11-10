@@ -18,6 +18,30 @@
                 outline: solid 2px;
             }
         </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const box = document.getElementById('anim-box');
+                const triggerBtn = document.getElementById('move-box');
+
+                const animation = box.animate([
+                { transform: 'translateX(0px)', opacity: 1 },
+                { transform: 'translateX(-100px)', opacity: 0 }
+                ], {
+                duration: 300,
+                iterations: 1,
+                easing: 'ease-in',
+                fill: 'forwards'
+                });
+
+                animation.pause();
+
+                triggerBtn.onclick = () => {
+                animation.currentTime = 0; // Rewinds to the start
+                animation.play();
+                };
+            });
+
+        </script>
     </head>
     <body>
         <div class="grid">
@@ -92,6 +116,16 @@
             <div>
                 a really really long text of really long words and also lots of words and even more words that make it very long
             </div>
+        </div>
+
+        <div id="anim-box" class="box-thin">
+            box
+        </div>
+        <button id="move-box" style="background-color: red;" onclick="animation.play()">
+            move da box
+        </button>
+        <div style="background-color: blue;" onclick="animation.pause()">
+            unmove da box
         </div>
     </body>
 </html>
