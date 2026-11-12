@@ -457,14 +457,16 @@ h2 {
     grid-template-columns: auto auto;
     padding: 10px;
     justify-content: center;
-    align-items: center;
+    place-items: center;
     margin-top: -20px;
     margin-bottom: -20px;
 }
 
 .grid-comm div {
-  padding: 10px;
-  text-align: left;
+    padding: 10px;
+    text-align: left;
+    margin: 0px;
+    width: clamp(0px, 100%, 400px);
 }
 
 .invis {
@@ -643,10 +645,23 @@ a:hover {
 }
 
 .plushie:active {
+    filter: drop-shadow(0 0 5px var(--small));
     transform: scaleX(1.4) scaleY(0.8) translateY(20px);
     transition: transform .1s ease-in-out;
 }
 
+#signature {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 25px;
+    z-index: 10;
+}
+#signature img {
+    width: 100px;
+    height: auto;
+    opacity: 0.3;
+}
 
 
 
