@@ -27,3 +27,4 @@
 - move writing to a .md file & import it
 - draw writing icon
 - draw icons for worlds
+- use gdocs API to auto-update content in writing
