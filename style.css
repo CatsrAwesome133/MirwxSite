@@ -318,6 +318,9 @@ h2 {
     transform: none;
     transition: none;
 }
+.fake-block {
+    max-width: calc(100vw - 50px);
+}
 
 
 .helper {
