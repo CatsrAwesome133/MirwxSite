@@ -64,6 +64,12 @@
       #png-screenshot {
         flex-basis: 200px;
       }
+
+      @media only screen and (max-width: 500px) {
+        .fake-block {
+          transform: scale(calc(100vw / 500px), calc(100vw / 500px));
+        }
+      }
     </style>
   </head>
   <body style="overflow-x: hidden;">
@@ -128,7 +134,7 @@
             </a>
           </div>
           <div>
-            <a href="writing.html">
+            <a href="writing/index.html">
             <p><img class="img-nav" src="wavecrop.png"></p>
             <p>Writing </p>
             </a>

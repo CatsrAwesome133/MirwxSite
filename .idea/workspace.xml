@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44390f12-2416-422c-b8d2-81038f8b2894" name="Changes" comment="Added Portfolio page">
-      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    <list default="true" id="44390f12-2416-422c-b8d2-81038f8b2894" name="Changes" comment="Attempt at fixing mobile css">
+      <change afterPath="$PROJECT_DIR$/writing/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writing.html" beforeDir="false" afterPath="$PROJECT_DIR$/writing.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +38,12 @@
     &quot;assignee&quot;: &quot;CatsrAwesome133&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/CatsrAwesome133/MirwxSite.git&quot;,
-    &quot;accountId&quot;: &quot;a28dae66-0169-4577-af6e-af8b4e8519b6&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/CatsrAwesome133/MirwxSite.git",
+    "accountId": "69f5aa38-6c8c-485c-923a-2d1ec10f076d"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -59,6 +61,11 @@
     "last_opened_file_path": "/Users/changc19/Documents/MirwxSite"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/writing" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -107,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791448032944</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Attempt at fixing mobile css">
+      <option name="closed" value="true" />
+      <created>1794463827063</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1794463827063</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +151,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add files via upload" />
     <MESSAGE value="Added Portfolio page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Portfolio page" />
+    <MESSAGE value="Attempt at fixing mobile css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Attempt at fixing mobile css" />
   </component>
 </project>
