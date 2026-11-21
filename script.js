@@ -10,8 +10,9 @@ function two() {
 
 // Main menu thing
 const blocks = [
-    'content-1',
-    'content-2'
+    'osas',
+    'ari',
+    'untitled1'
 ];
 
 const ficUntitled = [
