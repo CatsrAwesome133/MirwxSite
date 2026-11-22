@@ -15,7 +15,7 @@
 - reformat & edit comms page
 - worlds formatting (+JS?)
 - add/move contents to navbar
-- add bg to plushies (recolor OR css background)
+- ~~add bg to plushies (recolor OR css background)~~
 - ~~^ try going for a tab bar style~~ DONE
 - ^> fix scrolling
 - ~~^ draw icons & revise names~~ - DONE (for now)
@@ -25,7 +25,7 @@
 - animations
 - background image (static/parallax)
 - move writing to a .md file & import it
-- draw writing icon
-- draw icons for worlds
+- ~~draw writing icon~~ DONE
+- ~draw icons for worlds~
 - use gdocs API to auto-update content in writing
 - reformat writing to have an actual index page ;-;
