@@ -21,14 +21,14 @@ const ficUntitled = [
 ];
 
 // "element" is the ID of the element to display
-function switchBlock(element, collection) {
+function switchBlock(element, collection, from) {
     collection.forEach(e => {
         document.getElementById(e).style.display = 'none';
     });
     document.getElementById(element).style.display = 'block';
     document.getElementById(element).animate([
-        { transform: 'translateX(100px)', opacity: 0, offset: 0},
-        { transform: 'translateX(0px)', opacity: 1, offset: 1}
+        { transform: `translate(${from})`, opacity: 0, offset: 0},
+        { transform: 'translate(0px, 0px)', opacity: 1, offset: 1}
         ], {
         duration: 300,
         iterations: 1,
