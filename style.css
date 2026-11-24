@@ -102,6 +102,7 @@ p.section {
 
 
 
+
 /* General Formatting*/
 
 body {
@@ -134,6 +135,11 @@ h2 {
     border-color: var(--small);
     margin-left: 5%;
     margin-right: 5%;
+}
+
+ul {
+    color: var(--normal);
+    text-align: left;
 }
 
 
@@ -199,7 +205,7 @@ h2 {
     margin-left: 20px;
     margin-right: 10px;
     
-    top: 0;
+    top: 50px;
     align-self: flex-start;
 }
 
@@ -219,7 +225,7 @@ h2 {
     flex: 100%;
 }
 
-.box-menu div {
+.box-menu > div {
     border: double 2px var(--small);
     border-left: solid var(--small);
     border-radius: 7px;
@@ -230,6 +236,20 @@ h2 {
     margin-right: 20px;
     margin-left: 10px;
     word-break: break-word;
+    padding: 10px;
+}
+
+.box-menu > div p {
+    max-width: none;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div.section {
+    border-top: solid 1px var(--small);
+    border-bottom: solid 1px var(--small);
+    width: 80%;
+    margin: auto;
     padding: 10px;
 }
 
@@ -715,6 +735,32 @@ a:hover {
         border-top: solid 1px var(--small);
         outline: solid 20px rgb(from var(--darkest) r g b / 60%);
         clip-path: inset(-20px -20px 0px -20px);
+    }
+
+    .big-container {
+        flex-direction: column;
+    }
+
+    .box-nav-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -150px;
+        z-index: 1000;
+        margin-left: auto;
+        margin-right: auto;
+        top: 3px;
+    }
+
+    .box-nav {
+        position: relative;
+        top: -150px;
+        height: fit-content;
+        width: fit-content;
+        padding: 5px;
+        padding-bottom: 2px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .box-fit {
