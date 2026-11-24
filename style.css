@@ -483,12 +483,13 @@ div.section {
     place-items: center;
     margin-top: -20px;
     margin-bottom: -20px;
+    grid-gap: 30px;
 }
 
 .grid-comm div {
     padding: 10px;
     text-align: left;
-    margin: 0px;
+    margin: 10px;
     width: clamp(0px, 100%, 400px);
 }
 
