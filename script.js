@@ -16,9 +16,13 @@ const blocks = [
 ];
 
 const ficUntitled = [
-    'untitled-1',
-    'untitled-2'
+    'ttt-1',
+    'ttt-2'
 ];
+
+const ariSkits = [
+    ''
+]
 
 // "element" is the ID of the element to display
 function switchBlock(element, collection, from) {
@@ -35,6 +39,10 @@ function switchBlock(element, collection, from) {
         easing: 'ease-in-out',
         fill: 'forwards'
         });
+    const url = new URL(window.location.href);
+    url.searchParams.set('section', element);
+    const updatedUrl = url.toString();
+    window.history.pushState({}, '', updatedUrl);
 }
 
 function reformatWriting() {

@@ -7,6 +7,17 @@
         <link rel="icon" type="image/x-icon" href="pin2.ico">
         <link href="style.css" rel="stylesheet" type="text/css" media="all">
         <script src="script.js"></script>
+        <script> // Keep this script around for every page with block switching =w=
+            window.addEventListener('DOMContentLoaded', () => {
+                const urlParams = new URLSearchParams(window.location.search);
+                const id = urlParams.get('section')
+
+                if (id) {
+                    console.log(id);
+                    switchBlock(id, blocks, "0px, 0px");
+                }
+            });
+        </script>
     </head>
     <body>
         <!-- Navbar -->
@@ -40,9 +51,9 @@
 
             <div class="big-container">
                 <div class="box-nav-container">
-                    <a href="#osas"><div id="menu-1" class="box-nav" onclick="switchBlock('osas', blocks, '0px, -100px')">Of Stars And Stories</div></a>
-                    <a href="#ari"><div id="menu-2" class="box-nav" onclick="switchBlock('ari', blocks, '0px, -100px')">Aristocracy AU</div></a>
-                    <a href="#untitled1"><div id="menu-2" class="box-nav" onclick="switchBlock('untitled1', blocks, '0px, -100px')">Where the twins live</div></a>
+                    <div id="menu-1" class="box-nav" onclick="switchBlock('osas', blocks, '0px, -100px')">Of Stars And Stories</div>
+                    <div id="menu-2" class="box-nav" onclick="switchBlock('ari', blocks, '0px, -100px')">Aristocracy AU</div>
+                    <div id="menu-2" class="box-nav" onclick="switchBlock('untitled1', blocks, '0px, -100px')">Where the twins live</div>
                 </div>
                 <div class="box-menu">
                     <div id="osas">

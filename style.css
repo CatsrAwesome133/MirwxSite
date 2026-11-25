@@ -147,6 +147,10 @@ ul {
     text-align: left;
 }
 
+s {
+    color: var(--midtone);
+}
+
 
 
 /* Images */

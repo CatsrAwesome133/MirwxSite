@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mira's Writing: Aristocracy Shenanigans</title>
+        <link rel="icon" type="image/x-icon" href="pin2.ico">
+        <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+        <script src="../script.js"></script>
+        <script> // Keep this script around for every page with block switching =w=
+            window.addEventListener('DOMContentLoaded', () => {
+                const urlParams = new URLSearchParams(window.location.search);
+                const id = urlParams.get('section')
+
+                if (id) {
+                    console.log(id);
+                    switchBlock(id, ariSkits, "0px, 0px");
+                }
+            });
+        </script>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                const bar = document.getElementById('untitled-bar');
+                document.getElementById('untitled-bar-bottom').innerHTML = bar.innerHTML;
+            });
+        </script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div id="sticky-nav">
+            <p id="nav-left"><a href="../index.html"><img class="img-nav" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129223884_mA2VHQLk65ifwpa.png"></a></p>
+            <p id="nav-right"><a href="#title0"><img class="img-nav" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129223914_Hk3waQ9qBSMrHdQ.png"></a></p>
+        </div>
+
+
+
+        <!-- Content -->
+        <div>
+
+            <!-- Title, heading whatever -->
+            <div>
+                <img class="banner" src="https://miras-random-files.tiiny.site/banner6.png">
+                <h1 id="title0">Get Off of My Property</h1>
+                    <a class="subtitle" href="">Ao3 (...is currently not uplaoded, sorry!)</a>
+                <div id="untitled-summary">
+                    <p>Named after the "infamous" group chat, a trio of time loopers are really, really done with Hallownest. What adventures await?</p>
+                    
+                    <p class="center bar-scene">~</p>
+                    <p>Insert witty description</p>
+                </div>
+                <p class="fake-block">
+                <span class="small">All Uploaded Fics</span><br />
+                <a>This</a> - 
+                <a href="ttt.html">To The Tyrants</a>
+                </p>
+            </div>
+
+            <!-- seperator -->
+            <img class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
+
+            <div id="untitled-bar" class="nav-image">
+                <div onclick="switchBlock('', ariSkits, '100px, 0px')"><p>1</p></div>
+            </div>
+
+            <div id="main">
+                <div id="" class="box-fit writing">
+                    <h2>
+                        Placeholder
+                    </h2>
+                    <details class="center" style="margin-bottom: 20px;">
+                        <summary class="dropdown-btn">
+                        <span>
+                            Author's Notes
+                        </span>
+                        </summary>
+
+                        <div class="box-thin">
+                            <p>Hello! This is uhhh. You know, completely incomplete? I'll have some content soon trust.</p>
+                        </div>
+                    </details>
+
+                    <p>Placeholder</p>
+                    <p class="center bar-scene">~</p>
+                </div>
+            </div>
+
+            <div id="untitled-bar-bottom" class="nav-image"></div>
+        
+
+
+        <br /><br /><img style="margin-bottom: -40px;" class="banner" src="https://miras-random-files.tiiny.site/middle-banner.png">
+        <p style="margin: 20px;"><br /></p>
+        <p>Thanks for giving me you time and checking things out! May your pillow always be cold on both sides during summer</p>
+        <img class="banner" src="https://miras-random-files.tiiny.site/bottom-banner-ghost.png">
+
+        <div id="licence" class="small">
+            <br />
+            <br />
+            <br />
+            This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+        </div>
+    </body>
+</html>

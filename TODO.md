@@ -25,6 +25,7 @@
 - background image (static/parallax)
 - move writing to a .md file & import it
 - ~~draw writing icon~~ DONE
-- ~draw icons for worlds~
+- draw icons for worlds
 - use gdocs API to auto-update content in writing
 - reformat writing to have an actual index page ;-;
+- uncurse fic chapters
