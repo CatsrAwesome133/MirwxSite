@@ -117,6 +117,7 @@ body {
     text-align: center;
     overflow-x: hidden;
     overflow-x: clip;
+    margin: 0;
 }
 
 p {
@@ -288,6 +289,27 @@ div.section {
 .nav-image div p {
     margin: 0px;
     padding: 0px;
+}
+
+.bg {
+    position: fixed;
+    z-index: -1000;
+    opacity: 10%;
+    top: -50px;
+    left: 0;
+    will-change: transform;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg img {
+    height: 100vh;
+}
+
+.right {
+    position: fixed;
+    max-width: fit-content;
+    left: calc(100vw - 314px);
 }
 
 
@@ -565,7 +587,7 @@ a:hover {
 /* special styling for pfp icons. "copies" carrd. */
 #pfp {
     border-radius: 50%;
-    width: clamp(200px, 30vw, 340px);
+    width: clamp(200px, 20vw, 340px);
     margin: 10px;
     margin-top: 20px;
     border: inset 1px;

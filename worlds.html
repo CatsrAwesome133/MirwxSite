@@ -18,8 +18,51 @@
                 }
             });
         </script>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                bgElements = document.querySelectorAll('.bg');
+                bgContainer = document.getElementById('bg')
+            });
+
+            window.addEventListener('scroll', () => {
+                const scrollPosition = window.scrollY;
+                
+                bgElements.forEach((bg) => {
+                bg.style.transform = `translateY(${scrollPosition * -0.3}px)`;
+                });
+            });
+        </script>
     </head>
-    <body>
+
+    <body style="overflow-x: hidden;">
+        <!-- background-->
+        <div class="make-blue bg" style="padding: 0; margin: 0;">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+        </div>
+
+        <div class="make-blue bg right" style="padding: 0; margin: 0;">
+            <div style="transform: scale(-1, 1); display: flex; flex-direction: column;">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+                <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">
+            </div>
+        </div>
         <!-- Navbar -->
         <div id="sticky-nav">
             <p id="nav-left"><a href="index.html"><img class="img-nav" src="https://f2.toyhou.se/file/f2-toyhou-se/images/129223884_mA2VHQLk65ifwpa.png"></a></p>
