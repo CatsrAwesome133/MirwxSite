@@ -6,23 +6,10 @@
     <title>Template Doc</title>
     <link rel="icon" type="image/x-icon" href="pin2.ico">
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-        bgElements = document.querySelectorAll('.bg');
-        bgContainer = document.getElementById('bg')
-    });
+    <script src="scroll.js"></script>
+  </head>
 
-    window.addEventListener('scroll', () => {
-        const scrollPosition = window.scrollY;
-        
-        bgElements.forEach((bg) => {
-        bg.style.transform = `translateY(${scrollPosition * -0.3}px)`;
-        });
-    });
-    </script>
-</head>
-
-<body style="overflow-x: hidden;">
+  <body style="overflow-x: hidden;">
     <!-- background-->
     <div class="make-blue bg" style="padding: 0; margin: 0;">
     <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/131802355_Z3gJhHSSkDFf052.png">

@@ -71,20 +71,7 @@
         }
       }
     </style>
-    <script>
-      window.addEventListener('DOMContentLoaded', () => {
-        bgElements = document.querySelectorAll('.bg');
-        bgContainer = document.getElementById('bg')
-      });
-
-      window.addEventListener('scroll', () => {
-        const scrollPosition = window.scrollY;
-        
-        bgElements.forEach((bg) => {
-          bg.style.transform = `translateY(${scrollPosition * -0.3}px)`;
-        });
-      });
-    </script>
+    <script src="scroll.js"></script>
   </head>
 
   <body style="overflow-x: hidden;">
